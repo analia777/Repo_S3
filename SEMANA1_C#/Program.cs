@@ -10,7 +10,7 @@ namespace SEMANA1_C_
     {
         static void Main(string[] args)
         {
-            ejer2();
+            ejer3();
             Console.ReadKey(); //realizando detenimiento de consola
         }
 
@@ -26,8 +26,27 @@ namespace SEMANA1_C_
 
             Console.WriteLine($"\n{nombre}, bienvenido al curso de FA de {carrera}");
         }
-    }   static void ejer2()
-        { 
+
+        static void ejer2()
+        {
             Console.WriteLine("\"Analia\"");
         }
+
+        static void ejer3()
+        {
+            Console.Write("Ingrese x: ");
+            int x = int.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese y: ");
+            int y = int.Parse(Console.ReadLine());
+
+            int sum = x + y;
+            double divi = (double)x/(double)y;
+
+            Console.WriteLine("\nSuma: "+sum);
+            Console.WriteLine("Resta: " + (x - y));
+            Console.WriteLine("Multiplicación: " + (x * y));
+            Console.WriteLine("División: " + divi);
+        }
+    }
 }
